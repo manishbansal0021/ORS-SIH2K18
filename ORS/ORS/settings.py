@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'patient',
     'hospital',
+    'django_twilio',
 ]
 
 MIDDLEWARE = [
@@ -101,6 +102,25 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
+# Host for sending e-mail.
+EMAIL_HOST = 'localhost'
+
+# Port for sending e-mail.
+EMAIL_PORT = 1025
+
+# Optional SMTP authentication information for EMAIL_HOST.
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+EMAIL_USE_TLS = False
+
+#Settings for sending SMS
+
+TWILIO_ACCOUNT_SID = 'ACb2eca50cba66d38db9aaf0fc876b0c69'
+TWILIO_AUTH_TOKEN = '93435b61c1ae7099f16a7cf341317e18'
+DJANGO_TWILIO_FORGERY_PROTECTION = False
+DJANGO_TWILIO_BLACKLIST_CHECK = True
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
