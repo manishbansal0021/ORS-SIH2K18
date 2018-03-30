@@ -8,14 +8,14 @@ def register(request):
     pass
 
 
-def login(request):
+def login_view(request):
     pass
 
 
-def logout(request):
+def logout_view(request):
     pass
 
 
-def hospital_user_panel(request):
+def hospital_dashboard(request):
     pass
 

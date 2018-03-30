@@ -5,30 +5,24 @@ from django.contrib.auth import login,logout,authenticate
 
 # Create your views here.
 
-<<<<<<< HEAD
-=======
 def user_dashboard(request):
     pass
 
-def login(request):
+def login_view(request):
     pass
-
-def index(request):
-    pass
-
-
-def choice(request):
+def logout_view(request):
+    logout(request)
     pass
 
 
-def home(request):
+
+def registration_view(request):
     pass
 
-def appointment(request):
+def hospital_selection(request):
     pass
 
-def calander(request):
-    pass
+
 
 def confirmation(request):
     pass
@@ -36,4 +30,3 @@ def confirmation(request):
 
 
 
->>>>>>> c9bddb165e029f44e2f80cf4b032155b8548cbbc
